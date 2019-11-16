@@ -4,7 +4,7 @@ Bot útil para ayudar a la gente para hacer tradeos dentro de fortnite de forma 
 # Plantillas
 plantilla de comandos
 ```js
-exports.comando = (args, message, client, staff) => {};
+exports.comando = (args, message, client) => {};
 
 exports.descripcion = "";
 exports.uso = "";
