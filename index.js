@@ -10,10 +10,9 @@ client.on("ready", () => {
 
     console.log("Discord Bot listo!");
 
-
-    client.blackList = [];
     client.cmds = new Discord.Collection();
-    client.staff = ["643677540866719744"];
+    client.blackList = [];
+    client.staff = [];
 
 
 

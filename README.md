@@ -8,5 +8,5 @@ exports.comando = (args, message, client) => {};
 
 exports.descripcion = "";
 exports.uso = "";
-exports.publico = false;
+exports.publico = false/true;
 ```

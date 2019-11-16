@@ -17,6 +17,6 @@ exports.comando = (args, message, client) => {
     };
 };
 
-exports.descripcion = "Añades a un scamer a la lista.";
+exports.descripcion = "Añades a un ladron a la lista.";
 exports.uso = "m!añadir nombre|id|motivo";
 exports.publico = false;

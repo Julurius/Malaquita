@@ -17,6 +17,6 @@ exports.comando = (args, message, client) => {
 
 };
 
-exports.descripcion = "Reportas a un posible escamer.";
-exports.uso = "m!reportar Nombre de epicgames|evidencia|nombre de discord|id de discord";
+exports.descripcion = "Reportas a un posible ladron.";
+exports.uso = "m!reportar Link con evidencia|nombre de discord|id de discord";
 exports.publico = true;
