@@ -10,6 +10,15 @@ client.on("ready", () => {
 
     console.log("Discord Bot listo!");
 
+
+    client.user.setPresence({
+        "status": "online",
+        "game": {
+            "name": "Usa m!ayuda para reportar a un usuario.",
+            "type": "PLAYING"
+        }
+    });
+
     client.cmds = new Discord.Collection();
     client.blackList = [];
     client.staff = [];

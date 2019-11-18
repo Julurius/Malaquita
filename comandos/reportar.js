@@ -5,12 +5,12 @@ exports.comando = (args, message, client) => {
 
     const argumentos = args.join(" ").split("|");
     const embed = new RichEmbed()
-    .setTitle("Reporte resivido")
-    .setDescription("Usuario que reporto " + message.author.tag + " su id " + message.author.id)
-    .addField("Nombre de epicgames", argumentos[0])
-    .addField("evidencia", argumentos[1])
-    .addField("nombre de discord", argumentos[2])
-    .addField("id de discord", argumentos[3]);
+        .setTitle("Reporte resivido")
+        .setDescription("Usuario que reporto " + message.author.tag + " su id " + message.author.id)
+        .addField("Nombre de epicgames", argumentos[0])
+        .addField("evidencia", argumentos[1])
+        .addField("nombre de discord", argumentos[2])
+        .addField("id de discord", argumentos[3]);
 
     client.channels.get("645110717216849941").send(embed);
     message.channel.send("Reporte enviado.");
