@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 exports.comando = (args, message, client) => {
-    if (!client.staff.includes(message.author.id)) return;
+    if (client.staff.includes(message.author.id)) return;
 
     try {
         const argumentos = args.join(" ").split("|");

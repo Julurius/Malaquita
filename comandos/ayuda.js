@@ -9,7 +9,7 @@ exports.comando = (args, message, client) => {
     const embedPublico = new RichEmbed().setTitle("Comandos").setDescription(outPublico);
     message.channel.send(embedPublico);
 
-    if (!client.staff.includes(message.author.id)) return;
+    if (client.staff.includes(message.author.id)) return;
 
     let outPrivado = "";
     client.cmds.array().forEach((cmd) => {

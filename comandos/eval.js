@@ -1,7 +1,7 @@
 const { inspect } = require("util");
 
 exports.comando = (args, message, client) => {
-    if (!client.staff.includes(message.author.id)) return;
+    if (client.staff.includes(message.author.id)) return;
 
     try {
         const evaluado = inspect(eval(args.join(" ")));

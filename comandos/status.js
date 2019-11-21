@@ -2,7 +2,7 @@ const { inspect } = require("util");
 const { RichEmbed } = require("discord.js");
 
 exports.comando = (args, message, client) => {
-    if (!client.staff.includes(message.author.id)) return;
+    if (client.staff.includes(message.author.id)) return;
 
     const argumentos = args.join(" ").split("|");
 

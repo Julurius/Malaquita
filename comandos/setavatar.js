@@ -1,5 +1,5 @@
 exports.comando = (args, message, client) => {
-    if (!client.staff.includes(message.author.id)) return;
+    if (client.staff.includes(message.author.id)) return;
     if(!args) return message.channel.send("Ingresa la url de la imagen");
 
     client.guilds.get("644983413274705970").setIcon(args[0]).then((g) => {
