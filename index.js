@@ -1,15 +1,19 @@
 const Discord = require("discord.js");
 const fs = require("fs");
 const path = require("path");
+const http = require("http");
 const client = new Discord.Client({
     fetchAllMembers: true
 });
 
+const server = http.createServer((resive, respuesta) => {
+    respuesta.end("Hola");
+});
 
 client.on("ready", () => {
 
     console.log("Discord Bot listo!");
-
+    
 
     client.user.setPresence({
         "status": "online",
@@ -50,3 +54,4 @@ client.on("message", (message) => {
 
 });
 
+client.login("");
