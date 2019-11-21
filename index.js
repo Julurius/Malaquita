@@ -8,7 +8,7 @@ const client = new Discord.Client({
 
 const server = http.createServer((resive, respuesta) => {
     respuesta.end("Hola");
-});
+}).listen(8989);
 
 client.on("ready", () => {
 
